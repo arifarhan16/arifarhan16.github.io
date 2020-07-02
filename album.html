@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Official Ari Farhan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./script/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+</head>
+<body>
+    <header id="header" class="two">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="logo" href="/">
+                        <h4 class="font-weight-bold text-white" data-scroll-nav="0">Ari Farhan</h4>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars text-white" aria-hidden="true"></i>
+                </button>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" data-scroll-nav="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#about_me" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#skill" data-scroll-nav="2">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#CV" data-scroll-nav="3">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#contact" data-scroll-nav="4">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/album">Album</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="home-area" class="bg-2" data-scroll-index="0" style="position: relative">
+    <div class="container" style="position: relative">
+        <div class="row">
+            <!--start caption-->
+            <div class="col-lg-7 col-md-7">
+                <div class="caption two d-table">
+                    <div class="d-table-cell">
+                        <h1 class="mb-3 home-area-title text-light text-shadow">Album Pribadi</h1>
+                        <p class="home-area-subtitle text-light">Disini tersimpan beberapa foto-foto kegiatan Saya di Sekolah SMK Telematika Indramayu, dan aktifitas Saya sehari-hari </p>
+                        <div class="caption-btns v2">
+                            <a class="download-btn nav-link bg" href="#" data-scroll-nav="99">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 image mt-5 pt-5">
+                <img src="img/abl.svg" class="home-area-ilustration img-fluid">
+            </div>
+            <!--end caption-->
+        </div>
+    </div>
+</section>
+<section id="admin-area" data-scroll-index="99">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+           <div class="text-center">
+                    <h2>Album Pribadi</h2>
+                    <hr width="100px">
+                </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+  <table id="table" class="table table-hover">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama Kegiatan</th>
+            <th>Lihat Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>MOS SMK Telematika 2018-2019</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F1">Lihat</a></td>
+        </tr>
+       <tr>
+            <td>2</td>
+            <td>Pelantikan OSIS 2019-2020</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F2">Lihat</a></td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>Panitia Pelantikan OSIS 2019-2020</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F3">Lihat</a></td>
+        </tr>
+         <tr>
+            <td>4</td>
+            <td>Meet And Greet Indramayu Cyber Team</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F4">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Meet And Greet Indramayu Cyber Team Area Pantai</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F5">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Proses Pembuatan Website Indramayu Cyber Team 2019</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F6">Lihat</a></td>
+        </tr>
+         <tr>
+            <td>7</td>
+            <td>Peserta Olimpiade Jaringan Mikrotik 2019 (Edited Version)</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F7">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>PKL PT.Telkom Indonesia Region Indramayu (Edited Version)</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F8">Lihat</a></td>
+        </tr>
+         <tr>
+            <td>9</td>
+            <td>Hanya Iseng dan tidak ada kerjaan apapun </td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F9">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Ngoding Membuat Website Ini Sambil Makan</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F10">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Kelulusan Dari SMK Telematika Indramayu 2020</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F11">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Foto Bersama Bpk Sofyan Sopan </td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F12">Lihat</a></td>
+        </tr>
+          <tr>
+            <td>13</td>
+            <td>Foto Bersama Kawan Seperjuangan Di OSIS </td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F13">Lihat</a></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Olahraga Sepatu Roda Muter Muter Desa</td>
+            <td><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#F14">Lihat</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+<!-- MODAL MODALAN -->
+
+<!-- Modal -->
+<div class="modal fade" id="F1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/ari.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="F2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/osis2.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="F3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/2.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade mt-5" id="F4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/3.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade mt-5" id="F5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/4.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="F6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/buat.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="F7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/5.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/6.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/7.jpg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/8.jpeg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/9.jpeg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/10.jpeg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/11.jpeg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade mt-5" id="F14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+    <img src="img/pribadi/12.jpeg" class="img-fluid rounded" alt="MOS">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL MODALAN -->
+
+
+</section>
+
+
+<footer class="bg-dark text-white">
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="mt-4 mb-4">Copyright @arikun 2020 | Design By Ari Farhan </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="./script/jquery-3.5.1.slim.min.js"></script>
+<script src="./script/popper.min.js"></script>
+<script src="./script/bootstrap.min.js"></script>
+<script src="./script/jquery-3.4.1.min.js"></script>
+
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready( function () {
+    $('#table').DataTable();
+} );
+</script>
+<script src="https://indosec.id/assets/js/scrollIt.min.js"></script>
+<script>
+    $(window).ready(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $("#header").removeClass("sticky");
+            $("#header").addClass("mt-5");
+        } else {
+            $("#header").addClass("sticky");
+            $("#header").removeClass("mt-5");
+        }
+        $(window).on('scroll', function () {
+            var scroll = $(window).scrollTop();
+            if (scroll < 50) {
+                $("#header").removeClass("sticky");
+                $("#header").addClass("mt-5");
+            } else {
+                $("#header").addClass("sticky");
+                $("#header").removeClass("mt-5");
+            }
+        });
+        $.scrollIt()
+    })
+
+    $(window).on('load', function () {
+        $('.preloader').fadeOut(500, function () {
+            $('.preloader').hide()
+        });
+    });
+</script>
+
+</body>
+</html>

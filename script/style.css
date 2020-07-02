@@ -1,0 +1,579 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700|Roboto:400|Quicksand:400,500,600,700');
+
+
+body {
+    font-family: 'Quicksand', sans-serif
+}
+
+html,
+body {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.version-drak {
+    background-color: #040940
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button {
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0
+}
+
+a {
+    color: #2c3e50;
+    font-size: 14px
+}
+p {
+    font-size: 16px;
+    color: #505b6d;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%
+}
+
+.text-light {
+    color: #e2ecfc !important
+}
+
+.text-dark {
+    color: #555555 !important
+}
+
+@-webkit-keyframes translateY {
+	0%   {
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	 }
+
+	50%  {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	}
+}
+@keyframes translateY {
+	0%   {
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	 }
+
+	50%  {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	}
+}
+
+@-webkit-keyframes scale {
+	0%   {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+
+	50%  {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
+	100% {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+}
+
+@keyframes scale {
+	0%   {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+
+	50%  {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
+	100% {
+		-webkit-transform: scale(0.9);
+		        transform: scale(0.9);
+	}
+}
+
+@-webkit-keyframes rotate {
+	0%   {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	0%   {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+/*-------------------------------------------------------------------------------------
+    preloader
+---------------------------------------------------------------------------------------*/
+
+.preloader {
+    background: -webkit-gradient(linear, right top, left top, from(#2e19a7), to(#ae0ee9));
+    background: linear-gradient(to left, #2e19a7, #ae0ee9);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.preloader .spinner {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+/*-------------------------------------------------------------------------------------
+    header
+---------------------------------------------------------------------------------------*/
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 15px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #575fcf;
+}
+----------------------------------------------------------------------------------*/
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 15px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #575fcf;
+}
+#header.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: -webkit-gradient( linear, left top, right top, from(#20007e), to(#e61eb6));
+    background: linear-gradient( 90deg, #575fcf 0%, #575fcf 100%);
+    padding: 20px 0;
+    -webkit-box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px #111;
+    color: white !important;
+}
+
+#header.two.sticky {
+    background: #575fcf;
+}
+
+#header.sticky .navbar {
+    background-color: linear-gradient( 90deg, #20007e 0%, #e61eb6 100%);;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    font-size: 16px
+}
+
+.navbar-nav .nav-item {
+    padding: 0 6px;
+}
+
+.navbar-nav .nav-link.active:after,
+.navbar-nav .nav-link:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 15px;
+    margin: 0 auto;
+    border-bottom: 2px dotted #fff;
+}
+
+.navbar-nav .nav-item.download-btn .nav-link {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
+    box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
+    background:  -webkit-gradient( linear, left top, right top, from(#20007e), to(#e61eb6));;
+    background:  linear-gradient( 90deg, #20007e 0%, #e61eb6 100%);;
+    border-radius: 25px;
+    padding: 10px 34px;
+    background-size: 100% auto
+}
+
+.navbar-nav .nav-item.download-btn .nav-link:after {
+    border: 0
+}
+
+.navbar-nav .nav-item.download-btn.v2 .nav-link {
+    background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
+    background: linear-gradient(90deg, #9d5bfe, #3890fe);
+    background-size: 100% auto
+}
+
+.navbar-nav .nav-item.download-btn .nav-link:hover {
+    background-size: 200% auto
+}
+
+
+/* 
+---------------------------------------------------------------------------------------------------
+HOME AREA
+---------------------------------------------------------------------------------------------------
+*/
+
+#home-area.bg-2 {
+    background-image: url('../img/bg.png');
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 750px;
+    background-size: cover;
+}
+
+.caption {
+    padding: 230px 0 275px;
+}
+
+.caption.two {
+    padding: 238px 0 170px;
+}
+
+.caption-btns {
+    margin-top: 45px;
+}
+
+.caption-btns a {
+    display: inline-block;
+    margin: 0 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.caption-btns a {
+    display: inline-block;
+    margin: 0 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.caption-btns a i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-image: -webkit-gradient( linear, left top, right top, from(#ae0ee9), to(#585800cd));
+    background-image: linear-gradient( 90deg, #ae0ee9 0%, #5800cd 100%);
+    background-size: 100% auto;
+    text-align: center;
+    border: 1px dashed #fff;
+    margin-right: 8px
+}
+
+.caption-btns.v2 a i {
+    background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
+    background: linear-gradient(90deg, #9d5bfe, #3890fe);
+}
+
+.caption-btns a.bg {
+    background-image: -webkit-gradient( linear, left top, right top, from(#ae0ee9), to(#5800cd));
+    background-image: linear-gradient( 90deg, #ae0ee9 0%, #5800cd 100%);
+    background-size: 100% auto;
+    padding: 12px 30px;
+    border-radius: 30px
+}
+
+.caption-btns.v2 a.bg {
+    background: -webkit-gradient(linear, left top, right top, from(#575FCF), to(#5800cd));
+    background: linear-gradient(90deg, #2F5CC5, #575FCF);
+    border-color: 'white'
+}
+
+.caption-download-btns {
+    margin-top: 50px;
+}
+
+.caption-download-btns li {
+    display: inline-block;
+}
+
+.caption-download-btns li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: -webkit-gradient( linear, left top, right top, from(#ae0ee9), to(#5800cd));
+    background-image: linear-gradient( 90deg, #ae0ee9 0%, #5800cd 100%);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0 4px;
+    background-size: 100% auto
+}
+
+.caption-download-btns.v2 li a {
+    background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
+    background: linear-gradient(90deg, #9d5bfe, #3890fe);
+}
+
+.caption-download-btns li a:hover,
+.caption-btns a.bg:hover,
+.caption-btns a i:hover {
+    background-size: 200% auto
+}
+
+.home-area-title {
+    font-weight: 700 !important;
+    font-size: 62px
+}
+
+.home-area-subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+}
+.home-area-subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+}
+img.home-area-ilustration {
+    width: 550px !important;
+    height: 400px !important;
+    margin-top: 75px;
+    margin-left: 10px !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    img.home-area-ilustration {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    img.home-area-ilustration2 {
+        display: none;
+    }
+}
+
+.image {
+    -webkit-animation-name: translateY;
+	        animation-name: translateY;
+	-webkit-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+.d-table-cell > .text-shadow {
+    text-shadow: -2px 2px 1px solid black !important;
+}
+
+/* 
+HOW WORK AREA
+
+*/
+
+/*-------------------------------------------------------------------------------------
+    how work area
+---------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------------
+    admin area
+---------------------------------------------------------------------------------------*/
+
+#admin-area {
+    padding: 115px 0 50px;
+    background-image: url(https://indosec.id/assets//img/background/admin-bg-left.png), url(https://indosec.id/assets/img/background/admin-bg-right.png);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain
+}
+
+@media only screen and (width: 1200px) {
+    .admin-single {
+        margin-top: 50px;
+    }
+} 
+
+.admin-single:hover .admin-info {
+    opacity: 0.7
+}
+
+.admin-sigle:hover .admin-img .img-fluid {
+    opacity: 0.3;
+}
+
+
+/*-------------------------------------------------------------------------------------
+    partner area
+---------------------------------------------------------------------------------------*/
+
+#partner-area {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 38%;
+    padding: 0 0 120px !important;
+    margin-bottom: 15px;
+}
+
+#partner-area.bg {
+    background-image: url(https://indosec.id/assets//img/ilustrations/partner.png);
+}
+
+.team-area img {
+    width: 200px;
+    height: 200px;
+}
+#call-to-action {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url('../img/bg.jpg') fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+#call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action p {
+  color: #fff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #575FCF;
+  border: 2px solid #575FCF;
+}
+.map-container-3{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-3 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
